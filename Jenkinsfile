@@ -8,6 +8,13 @@ pipeline {
               archive 'target/*.jar' //so that they can be downloaded later
         //first commit      
             }
-        }   
+        }
+      stage('Unit Test') {
+            steps {
+              sh "mvn test"
+            }
+  
+    
+    
     }
 }
