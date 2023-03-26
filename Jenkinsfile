@@ -17,7 +17,7 @@ pipeline {
       }
       stage('Docker build and push') {
             steps {
-              sh "print env"
+              sh "printenv"
               sh 'docker build -t siddharth67/numeric-app'
               sh 'docker push -t siddharth67/numeric-app'
             }
